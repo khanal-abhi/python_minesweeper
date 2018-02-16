@@ -163,4 +163,6 @@ if __name__ == '__main__':
     """
     If this is run as a script.
     """
-    game = Game()
+    grid_size = [int(x) for x in input("Size: (width height) ").split()]
+    mines_count = int(input("Mines count: "))
+    game = Game(grid_size=grid_size,mines_count=mines_count)
